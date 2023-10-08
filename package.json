@@ -1,11 +1,8 @@
 {
-  "name": "@book000/twitterts",
-  "version": "0.0.0",
+  "name": "bountyweb3twitterts",
+  "version": "0.0.1",
   "description": "Twitter Unofficial Scraping API Library for TypeScript",
-  "homepage": "https://www.npmjs.com/package/@book000/twitterts",
-  "bugs": {
-    "url": "https://github.com/book000/twitterts/issues"
-  },
+  "homepage": "https://github.com/bountyWeb3/twitterts",
   "license": "MIT",
   "author": "Tomachi <tomachi@tomacheese.com>",
   "files": [
@@ -28,7 +25,7 @@
     "fix:eslint": "eslint . --ext ts,tsx --fix",
     "fix:prettier": "prettier --write src",
     "test": "jest --runInBand --passWithNoTests --detectOpenHandles --forceExit",
-    "lint": "run-p -c lint:prettier lint:eslint lint:tsc",
+    "lint": "run-p -c  lint:eslint lint:tsc",
     "lint:eslint": "eslint . --ext ts,tsx",
     "lint:prettier": "prettier --check src",
     "lint:tsc": "tsc",

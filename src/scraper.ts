@@ -150,6 +150,7 @@ export interface PuppeteerOptions {
    */
   enableDevtools?: boolean
 
+  headless?: boolean
   /**
    * プロキシ設定
    */
@@ -862,8 +863,9 @@ export class TwitterScraper {
 
     const userDataDirectory =
       this.options.puppeteerOptions?.userDataDirectory || '/data/userdata'
+    const headless = this.options.puppeteerOptions?.headless || false
     const browser = await puppeteer.launch({
-      headless: false,
+      headless,
       executablePath: this.options.puppeteerOptions?.executablePath,
       channel: 'chrome',
       args: puppeteerArguments,
